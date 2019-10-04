@@ -1,0 +1,13 @@
+{
+  "roots": ["./src/"],
+  "collectCoverage": true,
+  "collectCoverageFrom": ["**/*.js"],
+  "coverageDirectory": "./.coverage",
+  "testResultsProcessor": "jest-sonar-reporter",
+  "reporters": ["default", "jest-coverage-guard"],
+  "moduleDirectories": ["node_modules"],
+  "setupFiles": [
+    "babel-polyfill",
+    "./jestSetup.js"
+  ]
+}
